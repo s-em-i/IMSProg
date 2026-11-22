@@ -38,7 +38,7 @@ jobs:
             -DCMAKE_BUILD_TYPE=Release \
             -DCMAKE_PREFIX_PATH=$(brew --prefix qt@6) \
             -DCMAKE_OSX_ARCHITECTURES="${{ env.HOST_ARCH }}" \
-            -DCMAKE_OSX_DEPLOYMENT_TARGET="11.0" \
+            -DCMAKE_OSX_DEPLOYMENT_TARGET="10.14" \
             -DCMAKE_EXE_LINKER_FLAGS="-L/opt/homebrew/lib -L/usr/local/lib"
 
       - name: Build and Install Applications
